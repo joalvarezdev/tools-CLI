@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "3.11.7"
 pyperclip = "1.8.2"
+pytube = "15.0.0"
+python-dotenv = "1.0.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -17,3 +19,4 @@ build-backend = "poetry.core.masonry.api"
 pjson = "tools.pretty_json:format_json"
 uuid = "tools.uuid_generator:uuid_generator"
 enc = "tools.base_64:base_64_encode"
+you = "tools.music_downloader:datadownload"
