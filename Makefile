@@ -9,3 +9,6 @@ PRE_COMMIT_CONFIG = $(SHELL) $(SCRIPT_DIR)/pre-commit-config.sh
 
 precommit:
 	@$(PRE_COMMIT_CONFIG)
+
+build:
+	@poetry install
