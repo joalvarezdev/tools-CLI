@@ -1,7 +1,7 @@
 import json
 import pyperclip
 
-from tools.shared.utils import obtain_data
+from app.shared.utils import obtain_data
 
 
 def format_json():
