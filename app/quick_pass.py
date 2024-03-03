@@ -1,10 +1,10 @@
-from app.shared.environments import get_sign_quick_url, get_personal_info
+from app.shared.environments import get_personal_info
 from app.shared.web_driver import clickeable_button, text_field_send_keys, get_div_information, get_webdriver_data
 
 
 def sign_in():
-	data = get_webdriver_data(get_sign_quick_url())
 	data_info = get_personal_info()
+	data = get_webdriver_data(data_info.url)
 
 	clickeable_button(data.wait, "btnComenzar")
 

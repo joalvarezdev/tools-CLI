@@ -13,6 +13,7 @@ class WebDriverObj:
 
 
 class QuickPass:
+	url: str
 	ingress: str
 	legajo: str
 	pin: str
