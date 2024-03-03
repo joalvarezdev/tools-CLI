@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "tools"
+name = "app"
 version = "0.1.0"
 description = ""
 authors = ["Joaquin Alvarez <alvarez.joaquinez@gmail.com>"]
@@ -16,7 +16,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-pjson = "tools.pretty_json:format_json"
-uuid = "tools.uuid_generator:uuid_generator"
-enc = "tools.base_64:base_64_encode"
-you = "tools.music_downloader:datadownload"
+pjson = "app.pretty_json:format_json"
+uuid = "app.uuid_generator:uuid_generator"
+enc = "app.base_64:base_64_encode"
+you = "app.music_downloader:datadownload"

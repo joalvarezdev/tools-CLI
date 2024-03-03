@@ -1,7 +1,7 @@
 import base64
 import pyperclip
 
-from tools.shared.utils import obtain_data
+from app.shared.utils import obtain_data
 
 
 def base_64_encode():
