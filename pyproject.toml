@@ -10,6 +10,7 @@ python = "3.11.7"
 pyperclip = "1.8.2"
 pytube = "15.0.0"
 python-dotenv = "1.0.1"
+pre-commit = "3.6.2"
 
 [build-system]
 requires = ["poetry-core"]
