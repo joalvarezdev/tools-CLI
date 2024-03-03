@@ -11,6 +11,7 @@ pyperclip = "1.8.2"
 pytube = "15.0.0"
 python-dotenv = "1.0.1"
 pre-commit = "3.6.2"
+selenium = "4.18.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -21,3 +22,4 @@ pjson = "app.pretty_json:format_json"
 uuid = "app.uuid_generator:uuid_generator"
 enc = "app.base_64:base_64_encode"
 you = "app.music_downloader:datadownload"
+quick = "app.quick_pass:sign_in"
