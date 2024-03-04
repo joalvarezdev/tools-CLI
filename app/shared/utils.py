@@ -1,5 +1,5 @@
 import sys, os
-from app.data.utility import DownloadData
+from app.data.dto import DownloadData
 
 
 def obtain_data(message: str):
