@@ -1,8 +1,10 @@
 from app.shared.environments import get_personal_info
 from app.shared.web_driver import clickeable_button, text_field_send_keys, get_div_information, get_webdriver_data
+from app.shared.utils import obtain_data
+from app.shared.quick_file_utils import save_registry
 
 
-def sign_in():
+def __sign_in_quick_pass():
 	data_info = get_personal_info()
 	data = get_webdriver_data(data_info.url)
 
@@ -18,6 +20,16 @@ def sign_in():
 
 	clickeable_button(data.wait, "btnFichar")
 
-	information = get_div_information(data.driver, "divLog")
+	status = get_div_information(data.driver, "divLog")
+
+	save_registry(status)
 
 	data.driver.quit()
+
+
+def sign_in():
+	data = obtain_data("Algo salio mal")
+	if not data:
+		__sign_in_quick_pass()
+	else:
+		save_registry("Ingreso correcto")

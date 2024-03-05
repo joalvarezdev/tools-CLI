@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as ec
 
 import time
 
-from app.data.utility import WebDriverObj
+from app.data.dto import WebDriverObj
 
 
 def clickeable_button(web_driver: WebDriverWait, html_id_element: str):

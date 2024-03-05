@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from app.data.utility import QuickPass
+from app.data.dto import QuickPass
 
 
 def download_path() -> str:
@@ -18,3 +18,13 @@ def get_personal_info() -> QuickPass:
 	data.pin = os.getenv("PIN")
 
 	return data
+
+
+def get_root_dir_quick() -> str:
+	load_dotenv()
+	return os.getenv("ROOT_DIR_QUICK")
+
+
+def get_so_environmet() -> str:
+	load_dotenv()
+	return os.getenv("MY_GH")
