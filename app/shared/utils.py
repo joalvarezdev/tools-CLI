@@ -12,6 +12,13 @@ def obtain_data(message: str):
 		return sys.argv[1]
 
 
+def obtain_data_default() -> str:
+	if len(sys.argv) < 2:
+		return ""
+	else:
+		return sys.argv[1]
+
+
 def obtain_download_data(message: str) -> DownloadData:
 	if len(sys.argv) < 3:
 		print(message)
