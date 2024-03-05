@@ -46,8 +46,3 @@ def save_registry(status: str):
 			content.append(__get_current_registry())
 
 			__json_write_value(current_month_file, content)
-# content.append()
-
-# print(content)
-
-# __json_write_value(current_month_file, content)
