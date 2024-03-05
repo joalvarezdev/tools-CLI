@@ -1,4 +1,7 @@
-import sys, os
+import os
+import sys
+import time
+
 from app.data.dto import DownloadData
 
 
@@ -23,3 +26,7 @@ def rename_file(out_file: str, name: str):
 	base, ext = os.path.splitext(out_file)
 	new_file = name + ext
 	os.rename(out_file, new_file)
+
+
+def get_current_date(data_obtain: str) -> str:
+	return time.strftime(data_obtain)

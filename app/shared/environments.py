@@ -20,6 +20,11 @@ def get_personal_info() -> QuickPass:
 	return data
 
 
+def get_root_dir_quick() -> str:
+	load_dotenv()
+	return os.getenv("ROOT_DIR_QUICK")
+
+
 def get_so_environmet() -> str:
 	load_dotenv()
 	return os.getenv("MY_GH")
