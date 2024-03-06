@@ -3,5 +3,16 @@ repos:
     rev: v3.1.0
     hooks:
       - id: conventional-pre-commit
-        stages: [commit-msg]
-        args: []
+        stages: [ commit-msg ]
+        args: [ ]
+  - repo: https://github.com/psf/black
+    rev: 24.2.0
+    hooks:
+      - id: black
+        args: [--safe]
+  - repo: https://github.com/Pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        language_version: python3
+        args: [--max-line-length=88]

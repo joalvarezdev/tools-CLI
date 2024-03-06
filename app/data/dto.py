@@ -3,17 +3,17 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class DownloadData:
-	url: str
-	name: str
+    url: str
+    name: str
 
 
 class WebDriverObj:
-	driver: WebDriver
-	wait: WebDriverWait
+    driver: WebDriver
+    wait: WebDriverWait
 
 
 class QuickPass:
-	url: str
-	ingress: str
-	legajo: str
-	pin: str
+    url: str
+    ingress: str
+    legajo: str
+    pin: str
