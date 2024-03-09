@@ -38,3 +38,7 @@ def sign_in():
         __sign_in_quick_pass()
     else:
         save_registry("Ingreso correcto")
+
+
+if __name__ == "__main__":
+    sign_in()
