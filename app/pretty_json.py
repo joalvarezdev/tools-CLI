@@ -17,4 +17,5 @@ def format_json():
         return "Error: JSON inválido - {}".format(e)
 
 
-format_json()
+if __name__ == "__main__":
+    format_json()

@@ -55,3 +55,7 @@ def __convert_video_to_mp3(input_file, output_file):
     except subprocess.CalledProcessError as e:
         print("Conversion failed!")
         print(e)
+
+
+if __name__ == "__main__":
+    __data_download()

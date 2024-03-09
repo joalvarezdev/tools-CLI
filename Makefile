@@ -17,3 +17,6 @@ build:
 
 lint:
 	@$(LINTERS)
+
+init:
+	@poetry shell
