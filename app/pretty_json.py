@@ -5,7 +5,12 @@ from app.shared.utils import obtain_data
 
 
 def format_json():
-    data = obtain_data("Enter JSON as argument")
+    try:
+        data = obtain_data("Enter JSON as argument")
+    except Exception as e:
+        print(e)
+        return e
+
     try:
         # Cargar el JSON y formatearlo
         json_obj = json.loads(data)
