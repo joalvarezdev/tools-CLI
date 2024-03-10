@@ -5,9 +5,9 @@ import time
 from app.data.dto import DownloadData
 
 
-def obtain_data(message: str):
+def obtain_data(message: str) -> str:
     if len(sys.argv) < 2:
-        print(message)
+        raise Exception(message)
     else:
         return sys.argv[1]
 
