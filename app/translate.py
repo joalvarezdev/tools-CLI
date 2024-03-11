@@ -1,17 +1,14 @@
 from app.shared.utils import obtain_data
-from transformers import pipeline
-import logging
-import tensorflow as tf
-
-tf.get_logger().setLevel(logging.CRITICAL)
+from googletrans import Translator
 
 
 def __translate_es_to_en(message: str) -> str:
-    pipe = pipeline("translation", model="Helsinki-NLP/opus-mt-es-en")
 
-    result = pipe(message)
+    translator = Translator()
 
-    return result[0]["translation_text"]
+    result = translator.translate(message, dest="en").text
+
+    return result
 
 
 def init_translate() -> None:
