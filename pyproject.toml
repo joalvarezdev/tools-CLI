@@ -21,6 +21,7 @@ flake8 = "7.0.0"
 #sacremoses = "^0.1.1"
 #translate = "^3.6.1"
 googletrans = "4.0.0-rc1"
+pyshorteners = "^1.0.1"
 
 [flake8]
 exclude = [".venv", ".git"]
