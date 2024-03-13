@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import pyperclip
 
 from app.data.dto import DownloadData
 
@@ -37,3 +38,7 @@ def rename_file(out_file: str, name: str):
 
 def get_current_date(data_obtain: str) -> str:
     return time.strftime(data_obtain)
+
+
+def data_on_clipboard(data: str) -> None:
+    pyperclip.copy(data)
