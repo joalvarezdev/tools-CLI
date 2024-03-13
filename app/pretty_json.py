@@ -1,7 +1,6 @@
 import json
-import pyperclip
 
-from app.shared.utils import obtain_data
+from app.shared.utils import obtain_data, data_on_clipboard
 
 
 def format_json():
@@ -16,7 +15,7 @@ def format_json():
         json_obj = json.loads(data)
         json_formatted = json.dumps(json_obj, indent=2)
 
-        pyperclip.copy(json_formatted)
+        data_on_clipboard(json_formatted)
 
     except ValueError as e:
         return "Error: JSON inválido - {}".format(e)
