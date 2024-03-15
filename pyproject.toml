@@ -6,7 +6,7 @@ authors = ["Joaquin Alvarez <alvarez.joaquinez@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11.7"
+python = "3.11.8"
 pyperclip = "1.8.2"
 pytube = "15.0.0"
 python-dotenv = "1.0.1"
@@ -16,6 +16,7 @@ black = "24.2.0"
 flake8 = "7.0.0"
 googletrans = "4.0.0-rc1"
 pyshorteners = "^1.0.1"
+tk="^0.1.0"
 
 [flake8]
 exclude = [".venv", ".git"]
@@ -38,3 +39,4 @@ you = "app.music_downloader:__data_download"
 quick = "app.quick_pass:sign_in"
 trans = "app.translate:init_translate"
 shorten = "app.url_shorter:init_shortener"
+jcalc = "app.calculator:init"
