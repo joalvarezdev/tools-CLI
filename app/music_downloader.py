@@ -1,7 +1,7 @@
 from pytube import YouTube
-from app.shared.environments import download_path
-from app.shared.utils import obtain_download_data, rename_file
-from app.shared.file_utils import remove_file
+from app.utils.environments import download_path
+from app.utils.utils import obtain_download_data, rename_file
+from app.utils.file_utils import remove_file
 
 import subprocess
 

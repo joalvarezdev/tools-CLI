@@ -1,12 +1,12 @@
-from app.shared.environments import get_personal_info
-from app.shared.web_driver import (
+from app.utils.environments import get_personal_info
+from app.utils.web_driver import (
     clickeable_button,
     text_field_send_keys,
     get_div_information,
     get_webdriver_data,
 )
-from app.shared.utils import obtain_data_default
-from app.shared.quick_file_utils import save_registry
+from app.utils.utils import obtain_data_default
+from app.utils.quick_file_utils import save_registry
 
 
 def __sign_in_quick_pass():

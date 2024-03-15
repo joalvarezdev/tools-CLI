@@ -1,6 +1,6 @@
 import pyshorteners
 
-from app.shared.utils import data_on_clipboard, obtain_data
+from app.utils.utils import data_on_clipboard, obtain_data
 
 
 def shorten_url(url: str) -> None:

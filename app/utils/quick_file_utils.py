@@ -1,8 +1,8 @@
 import json
 import os
 
-from app.shared.utils import get_current_date
-from app.shared.environments import get_root_dir_quick
+from app.utils.utils import get_current_date
+from app.utils.environments import get_root_dir_quick
 
 ROOT_DIR = get_root_dir_quick()
 LOGS_DIR = f"{ROOT_DIR}/logs"

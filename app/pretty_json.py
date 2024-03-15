@@ -1,6 +1,6 @@
 import json
 
-from app.shared.utils import obtain_data, data_on_clipboard
+from app.utils.utils import obtain_data, data_on_clipboard
 
 
 def format_json():
